@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class BaseServiceApplicationTests {
 
 	@Autowired
-	UserService<User> service;
+	UserService service;
 
 	@Test
 	public void contextLoads() {
@@ -24,7 +24,7 @@ public class BaseServiceApplicationTests {
 	@Test
 	public void testSave(){
 		User user = new User();
-		user.setUsername("xxx");
+		user.setUsername("username");
 		user.setPassword("123456");
 		service.save(user);
 	}

@@ -39,15 +39,6 @@ public interface BaseService<M>{
         //分页查询
         public Page<M> findByPage(Integer start, Integer size);
 
-        /*public SeparatePage<M> searchPageByOeder(Map<String, Object> conditions,String orderBy, String order, int page, int pageSize);
-
-        public SeparatePage<M> searchPage(Map<String, Object> conditions,int page, int pageSize);
-
-        public List<M> searchList(Map<String, Object> conditions, String... isDistinct);
-
-        public List<M> searchListDefined(String HQL);*/
-
-
         //根据Id判断对象是否存在
         boolean exists(Integer id);
 
